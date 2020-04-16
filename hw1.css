@@ -1,0 +1,77 @@
+body{
+	margin: 10px;
+	padding: 3px;
+}
+
+header{
+	text-align: center;
+	background-image: url("../images/flywheel.jpg");/*since my css file is inside a subfolder, I have to comeout
+	of that subfolder and then access images folder and the image in it*/
+
+}
+
+h1{
+	color: #ffffff;
+	font-size: 1.5rem;
+	text-align: center;
+	padding-top: 15px;
+	text-transform: uppercase;
+}
+
+nav a{
+	display: inline-block;
+	width: 20%;
+	height:40px;
+	padding-top: 15px;
+	border-radius: 5px;
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #000000;
+	opacity: 0.3;
+	font-size: 18px;
+	margin:20px;
+}
+
+nav a:link{
+	background-color: #ffffff;
+}
+
+nav a:visited,.active{  /*To make current page navigation link show*/
+	background-color: #ffffff;
+	opacity:1;
+}
+nav a:hover{
+	background-color: #ffffff;
+	opacity: 1.0;	
+}
+header>nav>a:active{
+	background-color: #00ddee;
+	opacity: 1.0;
+}
+
+
+aside{
+	display:inline-block; /*using inline-block, to make aside and section appear side by side. The problem
+	with using float is that it doesnt join header and aside , displaying both of them seperately,
+	which is not a desireed output for our assignment*/
+	background-color: #808000;
+	width: 22%;	
+}
+
+
+.right{
+	display:inline-block;
+	vertical-align: top; /* if this line not used the text content goes few pixels below header*/
+	width: 50%;	
+}
+
+
+img{
+	clear: both;
+	width:80%; /*Can use border-sizing for simplicity of math. But Ive manually calculated that , if we take 
+	100% of aside part, we need minimum 8%margin on both sides so total 16% needed for margin in horizontal direction.So total width of 20%(approx)
+	reserved for margin and remaining 80% is for width of element*/
+	display:block; /*Ive put images in block display to make them display in vertical order*/
+	margin: 8%;
+	border: #000000 solid 2px;
+}
