@@ -62,7 +62,7 @@ aside{
 .right{
 	display:inline-block;
 	vertical-align: top; /* if this line not used the text content goes few pixels below header*/
-	width: 50%;	
+	width: 75%;	
 }
 
 
